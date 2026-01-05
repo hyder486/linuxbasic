@@ -1,2 +1,0 @@
-# linuxbasic
-Graded Lab Assignment
