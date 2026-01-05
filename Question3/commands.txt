@@ -1,1 +1,38 @@
 
+### Command : echo "This is sample data for link testing." > ~/sample_data.txt
+Creates sample_data.txt in home directory and writes sample text into it.
+
+### Command : ln ~/sample_data.txt ~/sample_hard.txt
+Creates a hard link named sample_hard.txt pointing to the same inode as sample_data.txt.
+
+### Command : ln -s ~/sample_data.txt ~/sample_soft.txt
+Creates a symbolic link that stores the path to sample_data.txt, not the inode.
+
+### Command : ls -li ~/sample_data.txt ~/sample_hard.txt ~/sample_soft.txt
+shows inode numbers and detailed listing
+
+### Command : stat ~/sample_data.txt
+Displays permissions, owner, group, size, timestamps, inode number, and link count.
+
+### Command : -sh ~
+Shows total disk space used by your home directory.
+
+### Command : ls -lh ~
+Lists files in your home directory with human-readable sizes.
+
+### Command : rm ~/sample_soft.txt
+              cat ~/sample_data.txt
+Deletes only the symbolic link
+Original file remains unaffected, proving soft links don’t own data
+
+### Command : du -h ~
+              du -sh ~
+              du -h --max-depth=1 ~
+Shows space used by directories
+Useful for finding large folders
+Works at file/directory level
+
+### Command : df -h
+Shows total size, used space, available space, and mount points
+orks at filesystem/partition level
+Helps monitor disk capacity health
