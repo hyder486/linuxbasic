@@ -1,1 +1,34 @@
+### Command : mkdir ~/documents
+Creates a directory named documents inside the home directory.
 
+### Command : cd ~/documents
+cd moves into the documents directory
+
+### Command : touch plan.txt
+touch creates an empty file named plan.txt
+
+### Command : echo "Initial project plan: define requirements and timelines." > plan.txt
+Writes a sample project note into plan.txt.
+
+### Command : ls -l plan.txt
+Displays permissions, owner, group, size, and timestamps.
+Username appears as the file owner.
+
+### Command : cp plan.txt plan_copy.txt
+Creates a duplicate of plan.txt named plan_copy.txt.
+
+### Command : cd ~
+              mv documents project_documents
+Renames the directory to better reflect the project’s scope.
+
+### Command : mkdir ~/project_documents/archive
+Creates a subdirectory named archive inside project_documents.
+
+### Command : mv ~/project_documents/plan_copy.txt ~/project_documents/archive/
+Moves plan_copy.txt into the archive directory.
+
+### Command : ls -R ~/project_documents
+Recursively lists all files and subdirectories, showing the complete structure.
+
+### Command : realpath ~/project_documents/archive/plan_copy.txt
+Displays the absolute path of plan_copy.txt after it has been moved.
