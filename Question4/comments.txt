@@ -1,1 +1,25 @@
+### Command : ps -u "$USER"
+All processes currently running under user account.
 
+### Command : ps -u "$USER" -o pid,comm,%cpu --sort=-%cpu
+The top entry (highest %CPU) is the process consuming the most CPU among processes.
+
+### Command : sleep 300 &
+              jobs
+& runs the command in the background
+jobs lists active background jobs in the current shell
+
+### Command : free -h
+Total, used, and free memory
+Buffers/cache usage
+Swap usage
+
+### Command : df -h ~
+Disk usage of the filesystem containing your home directory, including total, used, and available space.
+
+### Command : echo $SHELL
+The currently active shell (e.g., /bin/bash, /bin/zsh).
+
+### Command : uname -a > system_report.txt
+              cat system_report.txt
+Redirects system information output into a file named system_report.txt.
