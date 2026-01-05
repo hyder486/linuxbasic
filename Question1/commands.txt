@@ -33,3 +33,4 @@ Sends 4 ICMP packets to verify network connectivity.
 Successful replies indicate the system has internet access.
 
 ### Command : uptime
+displays how long the system has been running, the number of currently logged in users and the CPU load average
