@@ -1,1 +1,2 @@
-
+### Command : id
+displays curently logged in username  
